@@ -20,9 +20,31 @@ Next we need to create intents. These are commands you define that Alexa can exe
 
 Using curly braces will define a variable, this variable is specified by the user. Below your sentances you'll see a section **Intent Slots**. Since you've defined your variable bar, you then need to define it as a slot type. 
 
-Select the plus sign in the side navbar next to **Slot Types (0)**
+Select the plus sign in the side navbar next to **Slot Types (0)** and name it *BAR* and input the name of all the bars on campus. 
+* brothers
+* murphys
+* legends
+* the hub
+* joes
+* kams
+* lion
+
+![alt text][img3]
+
+I choose the colloquial name of each bar; however, to make the skill more robust, add nicknames for each e.g. brothers ~ bros, lion ~ red lion etc. Navigate back to BarClosingTime and change the slot type for **bar** to the *BAR* slot you just created. 
+
+![alt text][img4]
+
+You have built the front end of your Alexa skill per-say. Select build and check that your skill compiles correctly. You could technically use this skill however, we need to satisfy the backend requirement which is where ![alt text][node]
+
+
+
 
 [l1]: <https://developer.amazon.com/home.html>
 [img1]: <img/img1.png>
 [img2]: <img/img2.png>
+[img3]: <img/img3.png>
+[img4]: <img/img4.png>
+[node]: <https://github.com/konpa/devicon/blob/master/icons/nodejs/nodejs-original.svg>
+
 
