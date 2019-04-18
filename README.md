@@ -12,9 +12,9 @@ Select **INVOCATION** from the navbar on the left side of the screen and change 
 
 
 Next we need to create intents. These are commands you define that Alexa can execute. In this example, we might define, GetClosingTime. In order for end-users to interact naturally with your intents, you need to define a few different sentence structures for the same comamnd. For example
-    - "What time does \{bar\} close?"
-    - "When does  \{bar\} close?"
-    - " \{bar\} closing time?"
+>>"What time does \{bar\} close?"
+>> "When does  \{bar\} close?"
+>> " \{bar\} closing time?"
 
 ![alt text][img2]
 
