@@ -1,4 +1,8 @@
 # How to create an alexa skill
+<!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+
 
 This will be a basic tutorial outlining how to create an alexa skill within the Alexa Development Console and AWS Lambas. 
 
@@ -35,13 +39,10 @@ I choose the colloquial name of each bar; however, to make the skill more robust
 
 ![alt text][img4]
 
-You have built the front end of your Alexa skill per-say. Select build and check that your skill compiles correctly. You could technically use this skill however, we need to satisfy the backend requirement which is where ![alt text][node]
+You have built the front end of your Alexa skill per-say. Select build and check that your skill compiles correctly. You could technically use this skill however, we need to satisfy the backend requirement which is where <i class="devicon-nodejs-plain"></i>
 
-<!-- in your header -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 <!-- in your body -->
-<i class="devicon-nodejs-plain"></i>
 
 
 [l1]: <https://developer.amazon.com/home.html>
@@ -49,6 +50,5 @@ You have built the front end of your Alexa skill per-say. Select build and check
 [img2]: <img/img2.png>
 [img3]: <img/img3.png>
 [img4]: <img/img4.png>
-[node]: <https://github.com/konpa/devicon/blob/master/icons/nodejs/nodejs-original.svg>
 
 
