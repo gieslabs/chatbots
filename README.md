@@ -1,4 +1,4 @@
-# How to create an alexa skill
+# Create an Alexa Skill
 
 
 
@@ -81,6 +81,13 @@ const HelpHandler = {
 ```
 You can also define help intents that allow users to ask alexa for a hint. Despite this, we will be deleting all this code so go ahead and <kbd>command</kbd> + <kbd>a</kbd> or <kbd>control</kbd> + <kbd>a</kbd> and delete the code. 
 
+We will instead use a tool called [ASK-SDK Code Generator][l3]. Navigate back to your Alexa Skill Console and select **JSON Editor** from the navigation bar. Copy and paste the JSON code into the Code Generator and copy the generated code back to your AWS PE.  
+
+![alt text][img5]
+
+We will edit this code later. For now, click **save** to generate the end point address. Above the button cluster you will see **ARN:** <address>. Copy that address to your clipboard and navigate back to the Alexa Skill Console. This is the unique identifier for your build. Every resource at amazon is assigned a unique ID. In the Skills Console, select **Endpoint** from the side navbar select **AWS Lambda ARN** paste the address into **default region** and click save endpoints. Select the *test* tab and you can begin testing your skill. 
+
+From here, you can modify the skill and the Lambda and the possibilities from here are pretty limitless. 
 
 
 
@@ -88,10 +95,13 @@ You can also define help intents that allow users to ask alexa for a hint. Despi
 
 [l1]: <https://developer.amazon.com/home.html>
 [l2]: <[https://aws.amazon.com/>
+[l3]: <http://alexa.codegenerator.s3-website-us-east-1.amazonaws.com/>
 [img1]: <img/img1.png>
 [img2]: <img/img2.png>
 [img3]: <img/img3.png>
 [img4]: <img/img4.png>
 [img5]: <img/img5.png>
+[img6]: <img/img6.png>
+
 
 
