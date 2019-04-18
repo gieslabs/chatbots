@@ -14,9 +14,9 @@ Select **INVOCATION** from the navbar on the left side of the screen and change 
 
 
 Next we need to create intents. These are commands you define that Alexa can execute. In this example, we might define, GetClosingTime. In order for end-users to interact naturally with your intents, you need to define a few different sentence structures for the same comamnd. For example
-* "What time does \{bar\} close?"
-* "When does  \{bar\} close?"
-* " \{bar\} closing time?"
+* What time does \{bar\} close?
+* When does  \{bar\} close?
+* \{bar\} closing time?
 
 ![alt text][img2]
 
@@ -39,26 +39,37 @@ I choose the colloquial name of each bar; however, to make the skill more robust
 
 You have built the front end of your Alexa skill per-say. Select build and check that your skill compiles correctly. You could technically use this skill however, we need to satisfy the backend requirement. You have two options: an AWS lambda endpoint or your own HTTP endpoint. For ease of use, we will specify an AWS lambda endpoint. 
 
-Begin by creating an [AWS developer account][https://aws.amazon.com/] and navigate to your developer console. Create a **Lambda** by selecting *resources* from the navbar and selecting **Lambda** under the *services* header. 
+Begin by creating an [AWS developer account][l2] and navigate to your developer console. Create a **Lambda** by selecting *resources* from the navbar and selecting **Lambda** under the *services* header. 
 
 ![alt text][img5]
 
 In the top right hand corner you should see a geographic location. Due to datacenter limitations, you need to select a region compatable for lamdas. Given our US location, N. Virginia is the best option. Select **Create Function** select *Browse serverless app repository* and select **alexa-skills-kit-nodejs-factskill**. Scroll down, choose a name, e.g. uiucbars, and select **Deploy**.  
 
-![alt text][img6]
-
 This will take a moment.  
 
-Under *resources* select **alexaskillskitnodejsfactskill** 
+Under *resources* select **alexaskillskitnodejsfactskill**. This next part is fairly self explanatory if you are familiar with JavaScript. You can read the template code however we won't be using it.
+```js
+const GetNewFactHandler = {
+    canHandle(handlerInput) {
+    const request = handlerInput.requestEnvelope.request;
+    return request.type === 'LaunchRequest'
+        || (request.type === 'IntentRequest'
+        && request.intent.name === 'GetNewFactIntent');
+    },
+```
+
+At a high level what we are doing is defining an event handler for one or more intents. 
+
+
 
 
 
 [l1]: <https://developer.amazon.com/home.html>
+[l2]: <[https://aws.amazon.com/>
 [img1]: <img/img1.png>
 [img2]: <img/img2.png>
 [img3]: <img/img3.png>
 [img4]: <img/img4.png>
 [img5]: <img/img5.png>
-[img6]: <img/img6.png>
 
 
