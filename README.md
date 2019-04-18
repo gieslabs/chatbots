@@ -85,7 +85,7 @@ We will instead use a tool called [ASK-SDK Code Generator][l3]. Navigate back to
 
 ![alt text][img6]
 
-We will edit this code later. For now, click **save** to generate the end point address. Above the button cluster you will see **ARN:** <address>. Copy that address to your clipboard and navigate back to the Alexa Skill Console. This is the unique identifier for your build. Every resource at amazon is assigned a unique ID. In the Skills Console, select **Endpoint** from the side navbar select **AWS Lambda ARN** paste the address into **default region** and click save endpoints. Select the *test* tab and you can begin testing your skill. 
+We will edit this code later. For now, click **save** to generate the end point address. Above the button cluster you will see **ARN:** \<address\>. Copy that address to your clipboard and navigate back to the Alexa Skill Console. This is the unique identifier for your build. Every resource at amazon is assigned a unique ID. In the Skills Console, select **Endpoint** from the side navbar select **AWS Lambda ARN** paste the address into **default region** and click save endpoints. Select the *test* tab and you can begin testing your skill. 
 
 From here, you can modify the skill and the Lambda and the possibilities from here are pretty limitless. 
 
