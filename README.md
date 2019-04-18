@@ -6,6 +6,7 @@ Begin by creating an Amazon [developer account][l1] and navigate to the Alexa Sk
 
 ![alt text][img1]
 
+Create a new skill with what ever name youd like. Enter a project name of your choice and select Custom as your model type. Since we will be learning to build a skill from stracth. 
 
 [l1]: <https://developer.amazon.com/home.html>
 [img1]: <img/img1.png>
