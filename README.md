@@ -56,9 +56,31 @@ const GetNewFactHandler = {
         || (request.type === 'IntentRequest'
         && request.intent.name === 'GetNewFactIntent');
     },
+    handle(handlerInput) {
+    const factArr = data;
+    const factIndex = Math.floor(Math.random() * factArr.length);
+    const randomFact = factArr[factIndex];
+    const speechOutput = GET_FACT_MESSAGE + randomFact;
+    
+    return handlerInput.responseBuilder
+        .speak(speechOutput)
+        .withSimpleCard(SKILL_NAME, randomFact)
+        .getResponse();
+    },
+};
 ```
 
-At a high level what we are doing is defining an event handler for one or more intents. 
+At a high level what we are doing is defining an event handler for one or more intents. You can write as many event handelers as you want and it can get complex with state management. The fact skill has two events, `LaunchRequest` and `IntentRequest`. If it returns true then it executes the corresponding method. You define your logic and define a responseBuilder. Given the diversity the the alexa universe, you can define different modal outputs. 
+```js
+const HelpHandler = {
+    canHandle(handlerInput) {
+        const request = handlerInput.requestEnvelope.request;
+        return request.type === 'IntentRequest'
+            && request.intent.name === 'AMAZON.HelpIntent';
+},
+```
+You can also define help intents that allow users to ask alexa for a hint. Despite this, we will be deleting all this code so go ahead and <kbd>command</kbd> + <kbd>a</kbd> or <kbd>control</kbd> + <kbd>a</kbd> and delete the code. 
+
 
 
 
