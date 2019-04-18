@@ -37,7 +37,11 @@ I choose the colloquial name of each bar; however, to make the skill more robust
 
 You have built the front end of your Alexa skill per-say. Select build and check that your skill compiles correctly. You could technically use this skill however, we need to satisfy the backend requirement which is where ![alt text][node]
 
+<!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+<!-- in your body -->
+<i class="devicon-nodejs-plain"></i>
 
 
 [l1]: <https://developer.amazon.com/home.html>
